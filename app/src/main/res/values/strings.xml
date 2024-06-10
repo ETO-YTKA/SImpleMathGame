@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MathApp</string>
+    <string name="right_answer">Правильных ответов</string>
+    <string name="wrong_answer">Неправильных ответов</string>
+    <string name="total_questions">Всего решено</string>
+    <string name="start">Старт</string>
+    <string name="check">Проверка</string>
+    <string name="answer">Ответ</string>
+</resources>
