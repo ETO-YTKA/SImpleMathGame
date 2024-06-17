@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.asStateFlow
 class Game(
     var rightAnswers: Int = 0,
     var wrongAnswers: Int = 0,
-    private val _expression: MutableStateFlow<Expression> = MutableStateFlow(Expression().generateExpression()),
+    private val _expression: MutableStateFlow<Expression> = MutableStateFlow(Expression()),
     var isStarted: Boolean = false
 ) {
     val expression: StateFlow<Expression> = _expression.asStateFlow()

@@ -1,15 +1,17 @@
 package com.example.mathapp
 
 class Expression(
-    val operator: String = generateOperator(),
-    val operand1: Int = generateOperands(operator)[0],
-    val operand2: Int = generateOperands(operator)[1]
+    val operator: String = "+",
+    val operand1: Int = 0,
+    val operand2: Int = 0
 ) {
     fun generateExpression(): Expression {
         val newOperator = generateOperator()
         val (newOperand1, newOperand2) = generateOperands(newOperator)
         return Expression(newOperator, newOperand1, newOperand2)
     }
+
+    override fun toString(): String { return "$operand1 $operator $operand2" }
 
     private companion object {
         fun generateOperator(): String = listOf(":", "+", "-", "*").random()
